@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    cursor: pointer; /* Indica que la página es interactiva */
+}
+
+/* Diseño de fondo dividido (Azul y Blanco/Gris claro) */
+.background-split {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    /* La magia del fondo dividido */
+    background: linear-gradient(to right, 
+        #0000FF 0%, 
+        #0000FF 50%, 
+        #f4f4f4 50%, 
+        #f4f4f4 100%
+    );
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta Principal */
+.confirmacion-card {
+    background: #ffffff; /* Fondo blanco para la tarjeta */
+    padding: 60px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Contenedor del Ícono (Círculo Verde) */
+.check-icon-container {
+    background-color: #4CAF50; /* Verde de éxito */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px auto; /* Centrar y margen inferior */
+    /* Sombra para darle profundidad (como en la imagen) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Estilo del Ícono de la Palomita */
+.check-icon {
+    color: white;
+    font-size: 50px;
+}
+
+/* Mensaje Principal */
+.mensaje-exito {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+/* Instrucción (Letras pequeñas) */
+.instruccion {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .background-split {
+        /* Desactiva el fondo dividido en móvil para simplificar */
+        background: #0000FF; 
+    }
+    .confirmacion-card {
+        margin: 20px;
+        max-width: 90%;
+    }
+}
