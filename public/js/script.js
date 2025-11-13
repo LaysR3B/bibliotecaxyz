@@ -73,6 +73,6 @@ loginForm.addEventListener('submit', function(event) {
     }
 
     // Si todo está bien, el formulario se enviará normalmente a Laravel
-    // Laravel se encargará de la autenticación y mostrará errores si es necesario
+    // Laravel se encargará de la autenticación y mostrará errores en caso sea  necesario
     return true;
 });
